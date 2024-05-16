@@ -1,7 +1,9 @@
 import React from "react";
 
 function App() {
-  return <div> next-eye</div>;
+    return (
+        <div className="text-lg text-center"> next-eye </div>
+    );
 }
 
-export default App;
+export default App;;
