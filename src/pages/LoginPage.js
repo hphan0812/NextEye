@@ -5,29 +5,26 @@ import { Input } from "components/Input";
 import { useForm } from "react-hook-form";
 import FormGroup from "components/Common/FormGroup";
 import { Button } from "components/Button";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+// import * as yup from "yup";
+// import { yupResolver } from "@hookform/resolvers/yup";
 
-const schema = yup.object()({
-    email: yup
-        .string()
-        .email("Please enter a valid email")
-        .required("Email is required"),
-    password: yup
-        .string()
-        .min(8, "Password must be at least 8 characters")
-        .required("Password is required"),
-});
+// const schema = yup.object()({
+//     email: yup
+//         .string()
+//         .email("Please enter a valid email")
+//         .required("Email is required"),
+//     password: yup
+//         .string()
+//         .min(8, "Password must be at least 8 characters")
+//         .required("Password is required"),
+// });
 
 const LoginPage = () => {
   const {
     handleSubmit,
     control,
     // formState: { errors },
-  } = useForm({
-    resolver: yupResolver(schema),
-    mode: "onSubmit"
-  });
+  } = useForm();
   const handleLogin = (values) => {
     console.log("handleLogin ~ values", values);
   };
