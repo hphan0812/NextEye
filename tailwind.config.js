@@ -7,7 +7,7 @@ module.exports = {
           primary: ["Epilogue", "sans-serif"],
         },
         colors: {
-          primary: "#1DC071",
+          primary: "#138496",
           secondary: "#6F49FD",
           text1: "#171725",
           text2: "#4B5264",

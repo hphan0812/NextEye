@@ -5,5 +5,9 @@
 @layer base {
   body {
     @apply font-primary text-base;
+    line-height: 1.5;
+  }
+  input {
+    @apply outline-none;
   }
 }

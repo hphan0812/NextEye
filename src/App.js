@@ -1,8 +1,13 @@
-import React from "react";
+import React, {lazy} from "react";
+import { Routes, Route } from "react-router-dom";
+
+const LoginPage = lazy(() => import("./pages/LoginPage"));
 
 function App() {
     return (
-        <div className="text-lg text-center"> next-eye </div>
+        <Routes>
+            <Route path="/login" element={<LoginPage></LoginPage>}></Route>
+        </Routes>
     );
 }
 
