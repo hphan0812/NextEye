@@ -6,11 +6,6 @@ const LoginLayout = (props) => {
   const {children, heading = "" } = props;
   return (
     <div className="w-full min-h-screen p-10 bg-lite isolate">
-      <img
-        src="/img/Ellipse 65.png"
-        alt="bg NextEye Portal"
-        className="absolute bottom-0 left-0 right-0 pointer-events-none z-[-1]"
-      />
       <Link to="/" className="inline-block mb-5 lg:mb-16">
         <img
           src="/img/logo_company.png"

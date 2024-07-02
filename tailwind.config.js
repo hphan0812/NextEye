@@ -1,6 +1,6 @@
 module.exports = {
     darkMode: "class",
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    content: ["./src/**/*.{js,jsx,ts,tsx,scss}"],
     theme: {
       extend: {
         fontFamily: {
